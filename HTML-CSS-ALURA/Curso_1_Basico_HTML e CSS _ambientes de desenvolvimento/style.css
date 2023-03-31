@@ -1,6 +1,35 @@
 @charset "UTF-8";
 
 body {
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #f6f6f6;
 }
+
+.titulo-destaque {
+    color: #22D4FD;
+}
+
+/* 
+Para alterar um elemento individualmente utilize class, isso isolara as configurações do elemento. Por exemplo, como há 2 strongs no código mas só queremos alterar um, então adicionamos a class para identificar qual sera alterado.
+
+Portanto para definir uma classe para qualquer tag, basta escrever class="" e entre as aspas o nome da classe que queremos, tudo isso dentro da tag, no caso, <strong class="">.
+
+//código suprimido
+<strong class="">com um Front-end de qualidade!</strong></h1>
+//código suprimido
+
+Vamos então nomear como class="titulo-destaque".
+
+Descobrimos também que para selecionar esse titulo-destaque precisamos usar o ponto (.) . Portanto voltaremos para o arquivo style.css e, no lugar do strong, escreveremos .titulo-destaque.
+
+body {
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+.titulo-destaque {
+    color: #22D4FD;
+}
+
+A classe é como um agrupamento de tipo. E podemos perceber que mesmo assim o trecho "React, HTML e CSS", na segunda linha, ficaram em destaque, mas apenas em negrito.
+*/
