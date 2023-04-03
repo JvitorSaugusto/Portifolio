@@ -10,3 +10,7 @@ Rafaella: Exato, é um guia do Flexbox com imagens, sendo muito mais tranquilo d
 
 SITE FLEX BOX: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 SITE MOZILLA: https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox
+----------------------------------------------------------------------------------------------------------------------------------------
+SITE INICIANDO COM HTML:
+https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Getting_started
+----------------------------------------------------------------------------------------------------------------------------------------
