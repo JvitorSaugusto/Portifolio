@@ -35,7 +35,17 @@ body {
     */
 }
 
+.apresentacao__conteudo {
+    width: 615px;
+}
 
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+}
 /* 
 Para alterar um elemento individualmente utilize class, isso isolara as configurações do elemento. Por exemplo, como há 2 strongs no código mas só queremos alterar um, então adicionamos a class para identificar qual sera alterado.
 
