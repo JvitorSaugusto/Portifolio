@@ -6,13 +6,8 @@
 }
 
 body {
-    height: 100vh;  /* Altura - O Vh significa View Port Height ou seja a altura do dispositivo de visualização*/
-    box-sizing: border-box; /*às vezes temos uma imagem cuja margem à esquerda fica tão grande que ela sai do body. Então precisamos garantir que os elementos "filhos", que estão dentro das tags maiores, como a tag "pai" <body>, ou seja, uma tag que está abaixo de outra não saia da tela.
-
-    Para isso, temos uma propriedade, que veremos agora na documentação. Para acessar a documentação, vamos pesquisar pelo nome da propriedade, que é "box sizing". E para ela eu gosto muito de usar como referência o Mozilla, porque tem um exemplo mais visual.
-
-    Usamos o valor border-box, porque com ele conseguimos criar, por exemplo, uma borda e um padding, ou o que quisermos, e o conteúdo será encolhido para sempre ser mantido dentro do elemento "pai". Isso acontece porque o border-box informa ao navegador para contabilizar qualquer borda e preenchimento nos valores especificados para a largura e a altura de um elemento.
-    */
+    height: 100vh;  
+    box-sizing: border-box; 
     background-color: #000000;
     color: #f6f6f6;
 }
@@ -22,26 +17,18 @@ body {
 }
 
 .apresentacao {
-    margin: 10% 15%; /*Aqui se utiliza % por usa com base a % das telas seja celular ou pc, caso utilize valores fixos, dependendo da tela ira bugar*/
-    display: flex; /*Por padrão ele vai colocar os elementos na mesma linha (row) mas podemos mudar para que fique em formas de colunas seria flex-direction: column. Contudo, o padrão do nosso projeto é horizontal, ou seja, do lado esquerdo fica o texto e do direito a imagem. Então não precisamos alterar esse padrão, ou seja, não precisamos alterar a propriedade flex-direction e determinar se será coluna ou linha. Inclusive podemos escrever como flex-direction: row, mas ele já está fazendo isso por padrão. */
-    align-items: center; /*Na verdade o align-items alinha os itens de acordo com o próprio alinhamento deles. Então temos a imagem, que é o elemento de maior altura, e ela que define qual será o ponto central do alinhamento. Então todos os alinhamentos estão alinhados conforme a imagem. Sempre com base no elemento de maior altura*/
-    justify-content: space-between; /*Queremos criar um espaço entre esses dois elementos sem criar uma margem externa muito grande. Vamos apenas espaçar a seção da imagem, concorda?
-
-    Guilherme: Sim.
-    
-    Rafaella: Para isso vamos utilizar o space-between localizado dentro da propriedade justify-content. Retornaremos ao nosso código e acessaremos o arquivo style.css, na qual buscaremos a seção .apresentacao{} a qual representa o nosso contêiner. Dentro de suas chaves , abaixo de align-items adicionaremos o justify-content: space-between;.
-    
-     Enquanto houver espaço, o conteúdo será afastado. Se tivéssemos três elementos, o space-between dividiria esse espaço entre cada um deles.
-    */
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .apresentacao__conteudo {
     width: 615px;
     display: flex;
-    flex-direction: column; /*stabelece o eixo principal, definindo assim a direção em que os itens flex são colocados no contêiner flex. Nesse caso em colunas*/
-    gap: 40px; /*A propriedade gap controla explicitamente o espaço entre os itens flexíveis. Aplica-se esse espaçamento apenas entre itens que não estão nas bordas externas.  Ela especifica no CSS o tamanho dos espaços entre linhas e colunas em layouts de grid, flex e multi-column. Sua sintaxe é bem simples e ela aceita um ou dois valores.*/
+    flex-direction: column; 
+    gap: 40px;
 }
-
 .apresentacao__conteudo__titulo {
     font-size: 36px;
     font-family: 'Krona One', sans-serif;
@@ -78,30 +65,3 @@ body {
     text-decoration: none; /*Decoração por exemplo sublinhado*/
     color: #f6f6f6;
 }
-/* 
-Para alterar um elemento individualmente utilize class, isso isolara as configurações do elemento. Por exemplo, como há 2 strongs no código mas só queremos alterar um, então adicionamos a class para identificar qual sera alterado.
-
-Portanto para definir uma classe para qualquer tag, basta escrever class="" e entre as aspas o nome da classe que queremos, tudo isso dentro da tag, no caso, <strong class="">.
-
-//código suprimido
-<strong class="">com um Front-end de qualidade!</strong></h1>
-//código suprimido
-
-Vamos então nomear como class="titulo-destaque".
-
-Descobrimos também que para selecionar esse titulo-destaque precisamos usar o ponto (.) . Portanto voltaremos para o arquivo style.css e, no lugar do strong, escreveremos .titulo-destaque.
-
-body {
-    background-color: #000000;
-    color: #F6F6F6;
-}
-
-.titulo-destaque {
-    color: #22D4FD;
-}
-
-A classe é como um agrupamento de tipo. E podemos perceber que mesmo assim o trecho "React, HTML e CSS", na segunda linha, ficaram em destaque, mas apenas em negrito.
-
-BOX MODEL: 
-margin, que define a área de margem nos quatro lados do elemento (cima, direita, baixo, esquerda), e padding, que define a área de preenchimento interna nos mesmos quatro lados do elemento
-*/
