@@ -1,0 +1,11 @@
+Utilizamos esta tag para agrupamentos bem específicos, como no caso dos nossos botões. Não utilizamos para esses fins as tags <main> ou <section>.
+
+Guilherme: Não é uma divisão de estrutura. Ela só aponta um agrupamento entre os elementos. E não precisam ser necessariamente botões. Podemos agrupar elementos de texto, desde que não se enquadrem em um contexto maior.
+
+Rafaella: Em um contexto semântico, né. Por exemplo: o conteúdo principal precisa de um nome: é o <main>. Se estamos trabalhando com um agrupamento de elementos que querem dizer uma coisa só, digitamos <section>. Já a <div> é puramente visual e serve apenas para juntar os dois botões em um lugar só, não possui valor semântico.
+
+Vamos estilizar os botões. Posicionaremos um botão à esquerda e outro à direita, na horizontal. Para isso, criaremos uma class para essa div.
+
+A tag <div> define uma divisão em um documento HTML e costuma ser usada como um contêiner para outros elementos, o que ajuda na estilização do bloco. Por esse motivo, a <div> é frequentemente utilizada quando precisamos agrupar elementos sem usar as tags semânticas do HTML. Isso acontece porque a <div> não tem valor semântico. Portanto, não significa nada para os navegadores e mecanismos de pesquisa.
+
+Além do mais, por ser muito utilizada para agrupar elementos, acaba facilitando na organização das informações nos layouts. Dessa forma, pode ser formatada e manipulada organicamente via CSS. Geralmente vem acompanhado de atributos de ID e classe para facilitar essa organização e formatação.
