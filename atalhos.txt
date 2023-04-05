@@ -1,0 +1,2 @@
+ctrl+k+c   comenta automaticamente
+ctrl+sift+p   envelopa um código selecionado

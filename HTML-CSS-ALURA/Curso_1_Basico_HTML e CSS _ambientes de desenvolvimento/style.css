@@ -54,20 +54,29 @@ body {
 
 .apresentacao__links {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .apresentacao__links__link {
-    background-color: #22D4FD;
-    width: 280px;
+    border: 2px solid #22D4FD;
+    width: 378px;
     text-align: center;
-    border-radius: 16px; /*arredondamento de bordas*/
+    border-radius: 8px; /*arredondamento de bordas*/
     font-size: 24px;
     font-weight: 600px; /*Peso da fonte, grossura*/
     padding: 21.5px 0px; /*Altera a distancia entre o conteudo e a borda, a ordem de alteração é: horizontal > vertical*/
     font-family: 'Montserrat', sans-serif;
     text-decoration: none; /*Decoração por exemplo sublinhado*/
-    color: #000000;
+    color: #f6f6f6;
 }
 /* 
 Para alterar um elemento individualmente utilize class, isso isolara as configurações do elemento. Por exemplo, como há 2 strongs no código mas só queremos alterar um, então adicionamos a class para identificar qual sera alterado.
