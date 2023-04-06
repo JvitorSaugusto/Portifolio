@@ -25,3 +25,6 @@ https://www.alura.com.br/artigos/css-border-estilizando-bordas-elementos-css
 HOVER:
 https://www.w3schools.com/CSSref/sel_hover.php
 ------------------------------------------------------------------------
+PADDING:
+https://www.w3schools.com/csS/css_padding.asp
+------------------------------------------------------------------------
