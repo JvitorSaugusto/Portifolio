@@ -28,3 +28,15 @@ https://www.w3schools.com/CSSref/sel_hover.php
 PADDING:
 https://www.w3schools.com/csS/css_padding.asp
 ------------------------------------------------------------------------
+Listas em HTML:
+https://www.w3schools.com/HTML/html_lists.asp
+------------------------------------------------------------------------
+Variaveis CSS:
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/Using_CSS_custom_properties
+------------------------------------------------------------------------
+PALETAS DE CORES:
+https://colorhunt.co/
+https://color.adobe.com/pt/create
+----------------------------------------------------------------------------
+PROJETOS HTML E CSS PARA PRATICAR:
+https://www.youtube.com/watch?v=y4ltLH9iK8E

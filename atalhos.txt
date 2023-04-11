@@ -1,2 +1,5 @@
-ctrl+k+c   comenta automaticamente
-ctrl+sift+p   envelopa um código selecionado
+ctrl+k+c --  comenta automaticamente
+
+ctrl+sift+p --  envelopa um código selecionado
+
+ctrl+shift+D -- Basta selecionar o que deseja mudar com o mouse e em seguida clicar em ctrl + D até que todos os valores que você deseja alterar estejam selecionados. Isso irá permitir mudar ao mesmo tempo todos os valores seguintes que sejam iguais ao que você selecionou com o mouse
