@@ -75,7 +75,6 @@ body {
 .favoritas {
     margin: 5% 0%;
     display: flex;
-    
     justify-content: center;
     gap: 3%;
 }
