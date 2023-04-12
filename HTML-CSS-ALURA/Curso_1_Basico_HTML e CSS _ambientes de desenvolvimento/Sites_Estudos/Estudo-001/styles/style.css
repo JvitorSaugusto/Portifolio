@@ -33,7 +33,7 @@ body {
 .cabecalho__menu__link {
     text-decoration: none;
     color: var(--cor-texto);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -50,14 +50,14 @@ body {
 
 .apresentacao__conteudo__titulo {
     background-color: var(--cor-primaria);
-    font-size: 60px;
+    font-size: 3.75rem;
     text-align: center;
     margin-bottom: 3%;
     color: var(--cor-terciaria);
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 19px;
+    font-size: 1.18rem;
     color: var(--cor-terciaria);
 }
 
@@ -67,7 +67,7 @@ body {
 
 .favoritas__titulo {
     background-color: var(--cor-primaria);
-    font-size: 60px;
+    font-size: 3.75rem;
     text-align: center;
     color: var(--cor-terciaria);
 }
@@ -80,6 +80,7 @@ body {
 }
 
 img {
+    width: 30%;
     border: solid 10px var(--cor-primaria);
 }
 
