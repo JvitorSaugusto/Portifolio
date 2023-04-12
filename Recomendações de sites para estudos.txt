@@ -40,3 +40,14 @@ https://color.adobe.com/pt/create
 ----------------------------------------------------------------------------
 PROJETOS HTML E CSS PARA PRATICAR:
 https://www.youtube.com/watch?v=y4ltLH9iK8E
+----------------------------------------------------------------------------
+
+CSS UNITS (REM):
+16px= 1 Rem
+https://www.w3schools.com/cssref/css_units.php
+
+https://dev.to/lixeletto/entendendo-unidades-css-e-quando-utiliza-las-3ecc#:~:text=rem%20O%20rem%20%C3%A9%20o%20root%20font-size%2C%20ou,tamanho%20da%20fonte%20do%20sistema%20ou%20utilize%20zoom.
+
+https://www.alura.com.br/artigos/guia-de-unidades-no-css
+
+--------------------------------------------------------------

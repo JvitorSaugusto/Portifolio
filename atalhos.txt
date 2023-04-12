@@ -1,5 +1,11 @@
 ctrl+k+c --  comenta automaticamente
-
+--------------------------------------------------------------
 ctrl+sift+p --  envelopa um código selecionado
-
+--------------------------------------------------------------
+ctrl+f -- encontra uma palavra no código
+--------------------------------------------------------------
 ctrl+shift+D -- Basta selecionar o que deseja mudar com o mouse e em seguida clicar em ctrl + D até que todos os valores que você deseja alterar estejam selecionados. Isso irá permitir mudar ao mesmo tempo todos os valores seguintes que sejam iguais ao que você selecionou com o mouse
+--------------------------------------------------------------
+CTRL + SHIFT + C -- Para abrir o Dev Tools, quando estiver com o navegador aberto.
+Apertar as teclas CTRL + SHIFT + M para abrir a visualização responsiva.
+A ferramenta de desenvolvimento (Dev Tool) ajuda muito no processo de criação e desenvolvimento de projetos web. Além de inspecionar os nossos códigos HTML e CSS, podemos fazer algumas alterações temporárias e ela nos mostra uma prévia de outros tamanhos de telas e dispositivos como tablets e celulares e isso ajuda muito na hora de criarmos a versão mobile e toda a parte responsiva.
