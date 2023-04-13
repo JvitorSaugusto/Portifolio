@@ -13,6 +13,9 @@ SITE MOZILLA: https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flex
 ARTIGO ALURA FLEXBOX:
 https://www.alura.com.br/artigos/css-guia-do-flexbox
 ----------------------------------------------------------------------------------------------------------------------------------
+ORGANIZANDO SEU CSS:
+https://www.alura.com.br/artigos/organizando-o-css-no-seu-projeto
+-----------------------------------------------------------------------------------------------------------------------------
 CSS GRID:
 https://css-tricks.com/snippets/css/complete-guide-grid/
 https://www.alura.com.br/artigos/criando-layouts-com-css-grid-layout
@@ -27,6 +30,9 @@ https://www.alura.com.br/artigos/qual-diferenca-entre-id-e-class
 SITE PARA <DIV>:
 https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/div
 ------------------------------------------------------------------
+INLINE BLOCK:
+https://medium.com/collabcode/pare-de-chutar-e-aprenda-como-funciona-o-display-inline-block-4e6cba2f19d4
+----------------------------------------------------------------------------------
 CSS BORDER:
 https://www.alura.com.br/artigos/css-border-estilizando-bordas-elementos-css
 ----------------------------------------------------------------------
