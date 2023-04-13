@@ -85,3 +85,6 @@ https://vercel.com/
 ----------------------------------------------------------------------------------------------
 EXTENSOES VSCODE:
 https://www.alura.com.br/artigos/extensoes-vs-code-descubra-as-mais-usadas
+------------------------------------------------------------------------------------------
+PSEUDO-CLASSES:
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes
