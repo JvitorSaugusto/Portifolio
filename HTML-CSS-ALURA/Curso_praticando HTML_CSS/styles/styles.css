@@ -102,3 +102,48 @@ Essa medida "em" é o tamanho do fundo. Ela é uma medida relativa e é o tamanh
  .container__descricao {
     padding: 2em;
  }
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 3rem;
+    color: var(--branco-principal);
+}
+
+ .dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+ }
+
+ /*Display: flex
+
+ Ele transformou essa lista em um flex container. E todos os itens dessa lista que são os filhos deles em flex items. Por padrão esse flex container tem o flex direction que seria a direção desse container. E a direção padrão é row que seria linha. Então o que aconteceu? Ele fez todos os itens ficarem um do lado do outro em uma linha.
+ */
+
+.lista__item {
+    font-size: 2rem;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+}
+
+.rodape__logo {
+    color: var(--branco-principal);
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.lista_link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+}
