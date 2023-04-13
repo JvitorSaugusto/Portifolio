@@ -12,9 +12,17 @@ SITE FLEX BOX: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 SITE MOZILLA: https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox
 ARTIGO ALURA FLEXBOX:
 https://www.alura.com.br/artigos/css-guia-do-flexbox
+----------------------------------------------------------------------------------------------------------------------------------
+CSS GRID:
+https://css-tricks.com/snippets/css/complete-guide-grid/
+https://www.alura.com.br/artigos/criando-layouts-com-css-grid-layout
 ----------------------------------------------------------------------------------------------------------------------------------------
 SITE INICIANDO COM HTML:
 https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Getting_started
+----------------------------------------------------------------------------------------------------------------------------------------
+ID E CLASSES CSS
+https://www.alura.com.br/artigos/nomes-de-classes-no-css
+https://www.alura.com.br/artigos/qual-diferenca-entre-id-e-class
 ----------------------------------------------------------------------------------------------------------------------------------------
 SITE PARA <DIV>:
 https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/div

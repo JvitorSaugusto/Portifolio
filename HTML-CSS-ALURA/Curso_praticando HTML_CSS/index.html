@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Plus</title>
     <link rel="stylesheet" href="styles/styles.css">
+
 </head>
+
 <body>
-    <h1>Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço único.</h1>
-    
+    <section class="container principal">
+        <div>
+            <h1 class="container__titulo">Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço único.</h1>
+            <img src="img/Combo.png" alt="O combo+ é a junção do alura+ e o alura lingua">
+            <a href="www.alura.com.br" class="container__botao">Assine por 12x de R$ 120,00*</a>
+            <a href="www.alura.com.br" class="container__botao botao_secundario">Assinar somente o Alura+</a>
+            <p class="container__aviso">*O preço pode variar caso a assinatura seja feita em outros planos.</p>
+        </div>
+    </section>
 </body>
+
 </html>
+
+<!--Duas classes na mesma tag
+A utilização de duas classes na mesma tag é uma prática comum em CSS. Isso acontece porque cada classe pode conter um conjunto diferente de propriedades, permitindo que você crie estilos mais complexos e específicos para seus elementos HTML.
+
+No seu exemplo, a classe "principal" define a imagem de fundo e outras propriedades de estilo relacionadas ao fundo, enquanto a classe "container" define a altura da seção e outras propriedades de estilo relacionadas ao layout.
+
+Quando duas classes são aplicadas a um mesmo elemento, o navegador aplica as propriedades de estilo de ambas as classes, mas a ordem em que as classes são definidas pode afetar o resultado final. No seu caso, a classe "container" é definida depois da classe "principal", o que significa que as propriedades da classe "container" sobrescrevem as propriedades da classe "principal" para a cor de fundo.
+
+Para evitar que isso aconteça, você pode definir a cor de fundo diretamente na classe "principal" ou usar o seletor de classe mais específico para a cor de fundo, como .container.principal.
+
+A classe container esta definindo a largura de alguns componentes, aplicando uma padronização entre eles, quando trabalhamos com classes nomeadas de container, já associamos automaticamente à definição de largura e altura de algum componente(igual um container ou uma caixa na vida real), e nas outras classes são aplicados estilos de cores, fontes e espaçamentos internos. Isso deixa o código mais legível e organizado, facilitando a manutenção. Essa é apenas uma abordagem de organização de código html e css, e legal que você teve essa sacada, nada impede que o código seja construído de outra forma, chegando no mesmo efeito visual.
+-->
