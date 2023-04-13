@@ -50,4 +50,21 @@ https://dev.to/lixeletto/entendendo-unidades-css-e-quando-utiliza-las-3ecc#:~:te
 
 https://www.alura.com.br/artigos/guia-de-unidades-no-css
 
---------------------------------------------------------------
+---------------------------------------------------------------------------------------
+MEDIA QUERIES:
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/Media_Queries/Using_media_queries
+---------------------------------------------------------------------------------------
+IMAGENS RESPONSIVAS ARTIGO ALURA:
+https://www.alura.com.br/artigos/srcset-trabalhando-imagens-responsivas
+----------------------------------------------------------------------------------------------
+Sobre GIT e Github
+MARKDOWN:
+https://www.alura.com.br/artigos/como-trabalhar-com-markdown
+README:
+https://github.com/alura-cursos/readme-template
+EXEMPLOS README:
+https://github.com/vanessametonini/aluramidi-curso/blob/master/README.md
+https://github.com/alura-cursos/android-com-kotlin-personalizando-ui/blob/master/README.md
+----------------------------------------------------------------------------------------
+SERVIÇO DE HOSPEDAGEM PARA SEU SITE:
+https://vercel.com/
