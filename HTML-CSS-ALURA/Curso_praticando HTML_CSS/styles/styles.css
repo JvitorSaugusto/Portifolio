@@ -171,3 +171,35 @@ Essa medida "em" é o tamanho do fundo. Ela é uma medida relativa e é o tamanh
     background-color: var(--botao-azul-efeito);
     color: var(--cor-de-fundo);
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: block; /*Faz com que meu container transforme os elementos em blocos um em cima do outro, faz mais sentido para celular do que o grid com varias colunas*/
+        background-image: none;
+    }
+
+    .container__imagem {
+        width: 50vw;
+    }
+
+    .container__caixa {
+        margin: 2em 2em;
+    }
+
+    .secundario {
+        margin: 0;
+        text-align: center;
+    }
+
+    .secundario__imagem {
+        width: 50vw;
+    }
+
+    .dispositivos__lista {
+        display: block;
+    }
+
+    .rodape__lista {
+        display: block;
+    }
+}

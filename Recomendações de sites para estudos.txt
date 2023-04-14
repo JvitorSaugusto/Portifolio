@@ -72,10 +72,13 @@ IMAGENS RESPONSIVAS ARTIGO ALURA:
 https://www.alura.com.br/artigos/srcset-trabalhando-imagens-responsivas
 ----------------------------------------------------------------------------------------------
 Sobre GIT e Github
+https://cursos.alura.com.br/course/git-github-controle-de-versao
+
 MARKDOWN:
 https://www.alura.com.br/artigos/como-trabalhar-com-markdown
 README:
 https://github.com/alura-cursos/readme-template
+https://www.alura.com.br/artigos/escrever-bom-readme
 EXEMPLOS README:
 https://github.com/vanessametonini/aluramidi-curso/blob/master/README.md
 https://github.com/alura-cursos/android-com-kotlin-personalizando-ui/blob/master/README.md
