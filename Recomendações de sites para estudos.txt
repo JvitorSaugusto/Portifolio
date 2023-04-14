@@ -88,3 +88,7 @@ https://www.alura.com.br/artigos/extensoes-vs-code-descubra-as-mais-usadas
 ------------------------------------------------------------------------------------------
 PSEUDO-CLASSES:
 https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes
+-----------------------------------------------------------------------------------------
+DEPLOY COLOCANDO SEU SITE ONLINE:
+https://www.alura.com.br/artigos/heroku-vercel-outras-opcoes-cloud-plataforma
+---------------------------------------------------------------------------------------------

@@ -11,3 +11,8 @@ Apertar as teclas CTRL + SHIFT + M para abrir a visualização responsiva.
 A ferramenta de desenvolvimento (Dev Tool) ajuda muito no processo de criação e desenvolvimento de projetos web. Além de inspecionar os nossos códigos HTML e CSS, podemos fazer algumas alterações temporárias e ela nos mostra uma prévia de outros tamanhos de telas e dispositivos como tablets e celulares e isso ajuda muito na hora de criarmos a versão mobile e toda a parte responsiva.
 --------------------------------------------------------------
 Alt+shift+F -- Atalho de correção de código para deixar dentado automaticamente
+---------------------------------------------------------------
+ABRINDO O GITHUB PELO NAVEGADOR PARA ALTERAR SEU SITE HOSPEDADO
+
+1- Abra o repositorio desejado no github pelo navegador e aperte "."
+--------------------------------------------------------------------
