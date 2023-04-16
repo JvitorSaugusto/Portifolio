@@ -1,17 +1,14 @@
-Uma das tecnologias que usaremos agora no nosso projeto é o Flexbox. E como tudo que já fizemos, buscaremos a documentação dele.
-
-Guilherme: Podemos reparar que essa é uma prática constante. Sempre que vamos aprender algo novo, conferimos a documentação. Estamos tentando guiar vocês à uma documentação mais fácil e que tenha uma tradução em português.
-
-Podemos até abrir a documentação do Mozilla sobre Flexbox e ao traduzir para o português somos informados que se trata de "uma nova tecnologia" e que a ideia deles é "centralizar blocos de conteúdo verticalmente dentro do seu pai". Inclusive já aprendemos que o "pai" seria o elemento que contém outros elementos dentro.
-
-Eu recomendo que vocês leiam essa documentação com calma, mas ela é bastante técnica. Porém existe um "atalho" que vamos passa, certo, Rafa?
-
-Rafaella: Exato, é um guia do Flexbox com imagens, sendo muito mais tranquilo de conhecerem: o chamado A Complete Guide to Flexbox. Também traduziremos essa página para o português e, ao rolar por essa página, nos deparamos com várias imagens.
-
 FLEX BOX: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 SITE MOZILLA: https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox
 ARTIGO ALURA FLEXBOX:
 https://www.alura.com.br/artigos/css-guia-do-flexbox
+
+O Flexbox Cheatsheet é bem visual e você pode já ir testando as propriedades: https://yoksel.github.io/flex-cheatsheet/
+
+Se quiser praticar, o Flexbox Froggy é um clássico: https://flexboxfroggy.com/#pt-br
+
+ALURA+ GUIA FLEXBOX EM VIDEO:
+https://www.youtube.com/watch?v=MeYccuaWPn8
 ----------------------------------------------------------------------------------------------------------------------------------
 ORGANIZANDO SEU CSS:
 https://www.alura.com.br/artigos/organizando-o-css-no-seu-projeto
@@ -100,3 +97,5 @@ https://www.alura.com.br/artigos/o-que-e-reset-css
 -------------------------------------------------------------------------------------------------
 COMO USAR A PROPRIEDADE POSITION:
 https://www.devmedia.com.br/como-usar-a-propriedade-position-css/24451
+
+https://www.alura.com.br/artigos/entenda-a-propriedade-position-css
