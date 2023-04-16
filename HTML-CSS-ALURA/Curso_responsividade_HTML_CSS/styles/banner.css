@@ -1,0 +1,7 @@
+.banner {
+    background: var(--azul-degrade);
+    color: var(--branco);
+    text-align: center;
+}
+/*Usamos backgroud por ser um linear-gradient
+, em outros casos usamos o imagem ou color*/
