@@ -51,6 +51,7 @@ Então, o que ele está fazendo aqui? Esse caso é o mais perto que chegamos de 
 
 .lista-menu__titulo {
     color: var(--laranja);
+    font-weight: 700;
 }
 
 .lista-menu__link {
@@ -61,3 +62,6 @@ Então, o que ele está fazendo aqui? Esse caso é o mais perto que chegamos de 
     text-transform: uppercase;
 }
 
+.container__botao {
+    display: none;
+}
