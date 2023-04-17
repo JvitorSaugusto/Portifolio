@@ -33,6 +33,7 @@
 
 .container__botao:checked~.lista-menu {
     display: block;
+    z-index: 10; /* Afeta a profundidade de exibição dos elementos na tela */
 }
 
 /* Explicação .container__botao:checked~ .lista-menu

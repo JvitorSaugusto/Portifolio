@@ -99,3 +99,12 @@ COMO USAR A PROPRIEDADE POSITION:
 https://www.devmedia.com.br/como-usar-a-propriedade-position-css/24451
 
 https://www.alura.com.br/artigos/entenda-a-propriedade-position-css
+-----------------------------------------------------------------------------------------------
+Como fazer perguntas sobre códigos e lidar com as respostas, um guia prático:
+
+https://dev.to/felipperegazio/como-fazer-perguntas-sobre-codigos-e-lidar-com-as-respostas-um-guia-pratico-1cf7
+------------------------------------------------------------------------------------
+Swiper JS é um plugin feito em Javascript e CSS que obtemos através de uma rede de distribuição de conteúdo (também denominada pela sigla CDN). A função deste plugin na página AluraBooks é a de criar uma espécie de carrossel de imagens.
+--------------------------------------------------------------------------------------
+ELEMENTOS BLOCK-LEVEL
+https://www.alura.com.br/artigos/html-tags-elementos-block-level?utm_source=gnarus&utm_medium=timeline
