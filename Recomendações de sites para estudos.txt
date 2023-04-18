@@ -108,3 +108,18 @@ Swiper JS é um plugin feito em Javascript e CSS que obtemos através de uma red
 --------------------------------------------------------------------------------------
 ELEMENTOS BLOCK-LEVEL
 https://www.alura.com.br/artigos/html-tags-elementos-block-level?utm_source=gnarus&utm_medium=timeline
+---------------------------------------------------------------------------------------------------
+MEDIA QUERIES
+
+https://www.alura.com.br/artigos/flexibilidade-em-paginas-para-dispositivos-moveis-com-media-queries
+------------------------------------------------------------
+TAG <LABEL> EM INPUTS:
+Serve para tornar elementos clicaveis pelo input.exemplo:
+
+ <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+
+Ao clicar em "Categorias" na sua pagina ele ira ativar o botão por conta que o label está encapsulando ele.
+--------------------------------------------------------------

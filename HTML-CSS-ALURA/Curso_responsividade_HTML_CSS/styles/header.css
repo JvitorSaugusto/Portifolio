@@ -33,7 +33,8 @@
 
 .container__botao:checked~.lista-menu {
     display: block;
-    z-index: 10; /* Afeta a profundidade de exibição dos elementos na tela */
+    z-index: 10;
+    /* Afeta a profundidade de exibição dos elementos na tela */
 }
 
 /* Explicação .container__botao:checked~ .lista-menu
@@ -66,3 +67,69 @@ Então, o que ele está fazendo aqui? Esse caso é o mais perto que chegamos de 
 .container__botao {
     display: none;
 }
+
+.container__titulo {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .container__titulo,
+    .container__titulo--negrito {
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo--negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__item {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__imagem-transparente {
+        display: none;
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .opcoes__botao:checked~.lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+
+}
+
+/* Na .opcoes não é necessario usar o display: block 
+para que ela volte a aparecer na tela poi so display: flex ja faz essa função automaticamente*/
+/* min e max width
+Geralmente, quando fazemos layouts com o mobile first, nós botamos o min-width que aí chega quando o mínimo do tamanho da tela for 1024px, ele vai fazer aqueles estilos de dentro, caso você faça desktop first, que é você começa no tamanho do computador e depois vai diminuindo. Você usa o max-width, ou seja, o max-width ele pega quando o tamanho da tela for o máximo daquele tamanho, e vai aplicar aqueles estilos e aqui queremos com no mínimo 1024. Mas assim é uma questão de convenção que botamos max quando é desktop, e min quando é mobile.
+
+O @media serve para dizer ao CSS que estamos criando um media query e quer dizer que vamos nos comunicar com o CSS perguntando alguma coisa. O screen significa tela, então estamos trabalhando com a tela que acessa a página. O and é para agregar a tela ao (min-width: 1024px), ou seja, a tela tem tamanho mínimo de 1024px;*/
