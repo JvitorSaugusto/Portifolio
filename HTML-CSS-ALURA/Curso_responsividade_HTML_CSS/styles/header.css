@@ -7,6 +7,14 @@
     display: inline-block;
 }
 
+.container__botao:checked~.container__rotulo > .cabecalho__menu-hamburguer {
+    background-image: url(../img/Menu\ Aberto.png);
+}
+
+.container__botao:checked~.container__rotulo {
+    background: var(--azul-degrade);
+}
+
 .cabecalho {
     background-color: var(--branco);
     display: flex;
@@ -76,7 +84,6 @@ Então, o que ele está fazendo aqui? Esse caso é o mais perto que chegamos de 
     display: none;
 }
 
-
 @media screen and (min-width: 1024px) {
 
     .container__titulo,
@@ -125,11 +132,61 @@ Então, o que ele está fazendo aqui? Esse caso é o mais perto que chegamos de 
         display: none;
     }
 
+    
+.opcoes__botao:checked~.opcoes__rotulo > .opcoes__item {
+    background: var(--azul-degrade);
+    color: var(--branco);
 }
 
+.opcoes__item {
+    padding: 2em 1em;
+}
+
+.container__texto {
+    display: none;
+}
+
+.lista-menu__item:hover {
+    background: var(--azul-degrade);
+}
+
+.lista-menu__item:hover > .lista-menu__item {
+    -webkit-text-fill-color: var(--branco);
+    text-decoration: none;
+}
+
+/*webkit text
+Eu tive que usar esse webkit text fill color, porque lá no início do projeto, para botar essa cor azul, aquele degradê na fonte, nós tivemos que colocar um background e depois associar ele à fonte. E quando usamos o webkit text fill color tínhamos definido como transparente, então ele não aplicava cor nenhuma além daquele background estava aplicado.
+*/
+
+}
 /* Na .opcoes não é necessario usar o display: block 
 para que ela volte a aparecer na tela poi so display: flex ja faz essa função automaticamente*/
 /* min e max width
 Geralmente, quando fazemos layouts com o mobile first, nós botamos o min-width que aí chega quando o mínimo do tamanho da tela for 1024px, ele vai fazer aqueles estilos de dentro, caso você faça desktop first, que é você começa no tamanho do computador e depois vai diminuindo. Você usa o max-width, ou seja, o max-width ele pega quando o tamanho da tela for o máximo daquele tamanho, e vai aplicar aqueles estilos e aqui queremos com no mínimo 1024. Mas assim é uma questão de convenção que botamos max quando é desktop, e min quando é mobile.
 
 O @media serve para dizer ao CSS que estamos criando um media query e quer dizer que vamos nos comunicar com o CSS perguntando alguma coisa. O screen significa tela, então estamos trabalhando com a tela que acessa a página. O and é para agregar a tela ao (min-width: 1024px), ou seja, a tela tem tamanho mínimo de 1024px;*/
+
+@media screen and (min-width: 1728px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        color: var(--preto);
+        text-decoration: none;
+    }
+    .cabecalho {
+        padding: 0 2em;
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .container__texto {
+        display: block;
+    }
+    
+    /*Quando usamos o transform flex container,
+     quando colocamos lá dentro uma margem de left, right, bottom se botarmos o valor auto, ele vai tentar preencher todo o espaço que está sobrando. Então aqui no caso foi, ele preencheu toda a direita com a margem, então todos os itens foram empurrados para a esquerda*/
+
+}
