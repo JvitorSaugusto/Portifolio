@@ -76,6 +76,11 @@ Então, o que ele está fazendo aqui? Esse caso é o mais perto que chegamos de 
     display: none;
 }
 
+
+.opcoes__botao {
+    display: none;
+}
+
 .container__titulo {
     display: none;
 }
@@ -127,11 +132,6 @@ Então, o que ele está fazendo aqui? Esse caso é o mais perto que chegamos de 
         display: block;
         width: auto;
     }
-
-    .opcoes__botao {
-        display: none;
-    }
-
     
 .opcoes__botao:checked~.opcoes__rotulo > .opcoes__item {
     background: var(--azul-degrade);
