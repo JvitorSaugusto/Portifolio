@@ -11,12 +11,28 @@ function setup() {
   createCanvas(600, 400);
 }
 
+//Variaveis da raquete
+let xRaquete = 5;
+let yRaquete = 150;
+let raqueteComprimento = 10;
+let raqueteAltura = 90;
+
+//Variaveis da raquete Oponente
+let xRaqueteOponente = 585;
+let yRaqueteOponente = 150;
+let velocidadeyOponente;
+
 function draw() {
   background(0);
   mostraBolinha();
   movimentoBolinha();
   verificaColisaoBorda();
-
+  mostraRaquete(xRaquete, yRaquete);
+  mostraRaquete(xRaqueteOponente, yRaqueteOponente);
+  movimentoRaquete();
+  movimentoRaqueteOponente();
+  verificaColisaoRaquete(xRaquete, yRaquete);
+  verificaColisaoRaquete(xRaqueteOponente, yRaqueteOponente);
 
 /*Se xBolinha for maior que a largura (width) da tela, queremos fazer algo, que por sua vez estará entre chaves (ou "bigodes"). 
 
@@ -51,4 +67,28 @@ function verificaColisaoBorda(){
   if (yBolinha + raio  > height || yBolinha - raio  < 0){
     velocidadeyBolinha *= -1;
   }
+}
+
+function mostraRaquete(x,y){
+  rect(x, y, raqueteComprimento, raqueteAltura)
+}
+
+function movimentoRaquete(){
+  if (keyIsDown(UP_ARROW)){
+    yRaquete -=10;
+  }
+  if (keyIsDown(DOWN_ARROW)){
+    yRaquete +=10;
+  }
+}
+
+function verificaColisaoRaquete(x,y){
+  if (xBolinha - raio < x + raqueteComprimento && yBolinha - raio < y + raqueteAltura && yBolinha + raio > yRaquete){
+    velocidadexBolinha *=-1;
+  }
+}
+
+function movimentoRaqueteOponente(){
+  velocidadeyOponente = yBolinha - yRaqueteOponente - raqueteComprimento /2 - 30;
+  yRaqueteOponente += velocidadeyOponente
 }
