@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilos.css">
 
+
 </head>
 <body>
 
@@ -44,5 +45,13 @@
     <audio src="sounds/keyx.wav" id="som_tecla_tic"></audio>
     <audio src="sounds/keyc.wav" id="som_tecla_tom"></audio>
 
+    <script src="main.js"></script>
+
+
 </body>
 </html>
+    <!--A tag controls adiciona um menu de controle de audio no navegador
+    
+    O posicionamento do JS vai depender da sua prioridade, se for do head ou body
+
+    Quando o código JavaScript que vamos adicionar depende de elementos que estão no body, por exemplo um querySelector que espera receber determinado seletor, o local mais apropriado para sua inserção é dentro da tag body e na linha anterior ao fechamento da tag </body>. No head podemos inserir scripts, porém eles não devem ter dependencias de elementos do body, por exemplo uma biblioteca de funcionalidades.-->
