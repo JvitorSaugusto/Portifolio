@@ -16,3 +16,8 @@ ABRINDO O GITHUB PELO NAVEGADOR PARA ALTERAR SEU SITE HOSPEDADO
 
 1- Abra o repositorio desejado no github pelo navegador e aperte "."
 --------------------------------------------------------------------
+NO JAVA SCRIPT
+
+Uma dica legal que peguei pela internet. usando o VScode, quando quiser renomear uma variável no código todo de uma só vez, você pode selecionar a varíavel, apertar F2, depois é só renomear, o VScode atualiza o nome em todo o código.
+
+Achei muito útil para evitar erros de digitação.

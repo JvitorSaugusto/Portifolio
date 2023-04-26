@@ -1,0 +1,24 @@
+FUNÇÃO ANONIMA
+
+------------------------------------------------------------------------
+    listaDeTeclas[contador].onclick = function(){
+        tocaSom('#som_tecla_pom');
+    }
+------------------------------------------------------------------------
+
+
+No vídeo anterior vimos como fazer uma função mais genérica que possa executar qualquer tipo de som armazenado numa uma tag áudio, dado o seletor da tag áudio. Fizemos a função tocaSom. E conseguimos testá-la no console passando o ID daquelas tags áudios e escutar o som de cada instrumento daquela tag áudio. Porém, quando fomos clicar dentro do Alura Midi nas nossas teclas no navegador, obtivemos um erro no console dizendo que o querySelector falhou, pois [Object PointerEvent] não é um seletor válido.
+
+[00:46] Isso é porque não informamos o seletor correto para nossa função, o parâmetro correto para nossa função, então o JavaScript tentou resolver com as informações que ele tinha ali. Se olharmos aqui dentro do while, no nosso “main.js”, onde temos a instrução do onclick atribuindo a função tocaSom, vemos que não passamos o parâmetro dela.
+
+[01:10] Então como vamos conseguir passar o parâmetro? Então se eu escrever aqui os parênteses e passar um ID fixo, por exemplo, só para testarmos ‘#som_tecla_pom’ e salvar o arquivo e recarregar, vamos ter aquele velho problema que a página não pode executar o play, porque o usuário ainda não interagiu com a página.
+
+[01:45] Ou seja, toda vez que colocamos os parênteses ao lado do nome de uma função, já a invocamos imediatamente, antes mesmo do usuário interagir com a página e isso é uma restrição, um bloqueio que o browser (navegador) faz e não é isso que queremos, não queremos que ela seja executada nesse momento que o while ainda está atribuindo e guardando essa função em cada click de cada tecla do Midi.
+
+[02:14] Então precisamos de certa forma poder passar um parâmetro para essa função, para esse atributo onclick, sem executá-la imediatamente. E o JavaScript tem uma funcionalidade muito interessante, chamada funções anônimas, que eu vou utilizá-la no lugar da função tocaSom.
+
+[02:41] Então no onclick eu vou remover o tocaSom por enquanto e vou escrever uma função anônima, ou seja, uma função sem nome. E essas funções sem nome só podem ser utilizadas nesse contexto de quando elas são o valor de algum atributo ou estão sendo armazenadas dentro de alguma referência constante ou variável. Então eu estou aguardando uma função, vou escrever function dentro desse atributo onclick.
+
+[03:09] E não preciso colocar um nome nela, abre e fecha parênteses e depois abre fecha as chaves e dentro das chaves eu vou conseguir chamar a minha função tocaSom() com parênteses, porque na nossa atribuição, a função anônima no onclick, vamos declarar ou criar uma função nova, portanto, quando criamos uma função não a invocamos imediatamente, só criamos e declaramos que ela existe naquele contexto, naquele momento.
+
+[03:47] Para chamá-la eu vou ter que fazer o clique no botão, naquele determinado botão. Portanto agora dentro da minha função anônima, eu vou poder chamar a função tocaSom e aí colocar os parênteses e passar um dado ID. Então vou colocar os parênteses e aspas simples tocaSom(‘#som_tecla_pom’), por exemplo.
