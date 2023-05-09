@@ -21,3 +21,9 @@ NO JAVA SCRIPT
 Uma dica legal que peguei pela internet. usando o VScode, quando quiser renomear uma variável no código todo de uma só vez, você pode selecionar a varíavel, apertar F2, depois é só renomear, o VScode atualiza o nome em todo o código.
 
 Achei muito útil para evitar erros de digitação.
+----------------------------------------------------------------------------------------------------------------------------------------
+shift alt seta para baixo 
+duplica a linha de código
+--------------------------------------------------------------------------------------------------------------------------------------
+CTRL + K + C adiciona comentarios no JS
+CTRL + K + U tira os comentarios
