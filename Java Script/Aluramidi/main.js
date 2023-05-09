@@ -26,10 +26,10 @@ As listas se iniciam em 0 e vão até o valor total de itens -1 utilizando do si
 
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
-let contador = 0;
+//foi removido por conta que o for ja consegue declarar variaveis dentro de seu parenteses - let contador = 0;
 
 
-/* Enquanto - while
+/*Enquanto - while
 
 O while é uma estrutura de repetição que foi necessária para trabalhar com a lista de teclas. Esta estrutura possibilita que uma variável de contador tenha seu valor incrementado a cada repetição, e que pode ser utilizado para acessar os indices de uma lista além de ser comparado com o tamanho de lista, formando a condição para a repetição cessar.
 
@@ -37,18 +37,21 @@ O while é uma estrutura de repetição que foi necessária para trabalhar com a
  */
 
 //lenght guarda o numero total de elementos de uma lista
-while (contador < listaDeTeclas.length) {
 
-    listaDeTeclas[contador].onclick = function(){
-        tocaSom('#som_tecla_pom');
+//while (contador < listaDeTeclas.length) {
+// for, e for significa “para”. O for uma estrutura de laço de repetição ou de loop, que também vai fazer a mesma coisa, enquanto uma instrução, uma condição for verdade, ele vai repetir essa rotina, porém a vantagem em relação ao while é que o contador pode ser declarado ainda dentro dos parênteses do for.
+
+    for (let contador = 0; contador < listaDeTeclas.length; contador++) {
+
+    const tecla = listaDeTeclas[contador];
+    const instrumento = tecla.classList[1];//classlist cria uma lista de classes por exemplo: <button class="tecla tecla_pom">Pom</button> ele vai pega a segunda classe tecla_pom
+    const idAudio = `#som_${instrumento}`; //template string
+
+    tecla.onclick = function(){
+        tocaSom(idAudio);
     }
-
-    contador = contador + 1;
-
-    console.log(contador);
 }
-
-/*Explicação contador + 1
+/*Explicação contador + 1 ou contador++
 
 temos que ter contador para receber algum valor algum mais 1, só que esse algum valor vai ter que ser o valor antigo do contador, então pode ser ele mesmo, contador = contador+1;.
 
