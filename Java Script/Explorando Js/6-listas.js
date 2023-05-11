@@ -9,7 +9,14 @@ const listaDeDestinos = new Array(
     `rioDeJaneiro`
 );
 
-listaDeDestinos.push(`Curitiba`) // adicionando um item na lista ja declarada;
+listaDeDestinos.push(`Curitiba`) // adicionando remotamente um item na lista ja declarada;
 console.log("Destinos possíveis:");
 //console.log(salvador, saoPaulo, rioDeJaneiro);
 console.log(listaDeDestinos);
+
+// Removendo elementos da lista - splice(posição do elemento, quantia de elementos a ser apagada)
+listaDeDestinos.splice(1,1);
+console.log(listaDeDestinos);
+
+//exibir elemento especifico da minha lista
+console.log(listaDeDestinos[1], listaDeDestinos[0]);
