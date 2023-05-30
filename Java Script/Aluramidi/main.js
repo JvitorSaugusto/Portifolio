@@ -36,7 +36,7 @@ O while é uma estrutura de repetição que foi necessária para trabalhar com a
  Foi necessário usar o while como estrutura de repetição para auxiliar o acesso a cada elemento dentro da lista de teclas, podendo aplicar a rotina de associar uma função no atributo onclick de cada um destes elementos.
  */
 
-//lenght guarda o numero total de elementos de uma lista
+//O atributo lenght guarda o numero total de elementos de uma lista
 
 //while (contador < listaDeTeclas.length) {
 // for, e for significa “para”. O for uma estrutura de laço de repetição ou de loop, que também vai fazer a mesma coisa, enquanto uma instrução, uma condição for verdade, ele vai repetir essa rotina, porém a vantagem em relação ao while é que o contador pode ser declarado ainda dentro dos parênteses do for.
@@ -44,7 +44,7 @@ O while é uma estrutura de repetição que foi necessária para trabalhar com a
     for (let contador = 0; contador < listaDeTeclas.length; contador++) {
 
     const tecla = listaDeTeclas[contador];
-    const instrumento = tecla.classList[1];//classlist cria uma lista de classes por exemplo: <button class="tecla tecla_pom">Pom</button> ele vai pega a segunda classe tecla_pom
+    const instrumento = tecla.classList[1];//classlist cria uma lista de classes por exemplo: <button class="tecla tecla_pom">Pom</button> ele vai pegar a segunda classe tecla_pom,  permitindo o acesso de elementos dentro de outro.
     const idAudio = `#som_${instrumento}`; //template string
 
     tecla.onclick = function(){
@@ -56,4 +56,6 @@ O while é uma estrutura de repetição que foi necessária para trabalhar com a
 temos que ter contador para receber algum valor algum mais 1, só que esse algum valor vai ter que ser o valor antigo do contador, então pode ser ele mesmo, contador = contador+1;.
 
 [07:40] Como assim? Vamos pensar. Então aqui na primeira repetição o contador vai valer 0, 0 é menor que 9? Verdade. Então 0 + 1 vai ser 1, então ele primeiro faz essa conta, ele sempre vai processar essa conta primeiro, como se tivesse entre parênteses como eu coloquei, e depois ele vai fazer 0 + 1 = 1, então vou guardar 1. Então volta a retornar. Contador vai ser 1, 1 é menor que 9? É. Então agora o contador vai valer um e vai somar com mais 1, ou seja, vai ser 2 e vai guardar o novo valor 2. E assim por diante.
+
+FUNÇAO ANONIMA - PESQUISAR
 */
