@@ -45,7 +45,7 @@ O while é uma estrutura de repetição que foi necessária para trabalhar com a
 
     const tecla = listaDeTeclas[contador];
     const instrumento = tecla.classList[1];//classlist cria uma lista de classes por exemplo: <button class="tecla tecla_pom">Pom</button> ele vai pegar a segunda classe tecla_pom,  permitindo o acesso de elementos dentro de outro.
-    const idAudio = `#som_${instrumento}`; //template string
+    const idAudio = `#som_${instrumento}`; //template string - neste caso será uma string com um pedaço dinamico, utilzamos a crase neste caso, a parte dinamica esta dentro de ${}, podemos acessar variaveis, contas e etc dentro da string através deste método, aqui chamamos a const instrumento que está pegando o segundo elemento da class tecla, que vai se alternando entre os bot/ões por conta const tecla que é um contador, juntando com a string #som-,  formando assim o idAudio, permitindo a repordução de fierentes sons conforme clicamos nos botões.
 
     tecla.onclick = function(){
         tocaSom(idAudio);
