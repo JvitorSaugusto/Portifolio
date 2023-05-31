@@ -15,7 +15,7 @@ function tocaSom(seletorAudio) {
             elemento.play();
         }
     }
-
+}
 
     const listaDeTeclas = document.querySelectorAll('.tecla');
 
