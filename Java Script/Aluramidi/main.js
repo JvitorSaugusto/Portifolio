@@ -11,34 +11,35 @@ function tocaSom(seletorAudio) {
     }
 
     if (elemento != null) {
-        elemento.play();
-    }
-}
-
-
-const listaDeTeclas = document.querySelectorAll('.tecla');
-
-
-for (let contador = 0; contador < listaDeTeclas.length; contador++) {
-
-    const tecla = listaDeTeclas[contador];
-    const instrumento = tecla.classList[1];
-    const idAudio = `#som_${instrumento}`; //template string
-
-    tecla.onclick = function () {
-        tocaSom(idAudio);
-    }
-
-    tecla.onkeydown = function (evento) {
-        if (evento.code === 'Space' || evento.code === 'Enter') {
-            tecla.classList.add('ativa'); //.add - adiciona uma classe
+        if (elemento.localName === 'audio') {
+            elemento.play();
         }
     }
 
-    tecla.onkeyup = function () {
-        tecla.classList.remove('ativa'); // remove uma classe
+
+    const listaDeTeclas = document.querySelectorAll('.tecla');
+
+
+    for (let contador = 0; contador < listaDeTeclas.length; contador++) {
+
+        const tecla = listaDeTeclas[contador];
+        const instrumento = tecla.classList[1];
+        const idAudio = `#som_${instrumento}`; //template string
+
+        tecla.onclick = function () {
+            tocaSom(idAudio);
+        }
+
+        tecla.onkeydown = function (evento) {
+            if (evento.code === 'Space' || evento.code === 'Enter') {
+                tecla.classList.add('ativa'); //.add - adiciona uma classe
+            }
+        }
+
+        tecla.onkeyup = function () {
+            tecla.classList.remove('ativa'); // remove uma classe
+        }
     }
-}
 
 /* ANOTAÇÕES
 
