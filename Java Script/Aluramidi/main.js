@@ -2,9 +2,17 @@
 //buscando elementos no HTML
 //document.querySelector('.tecla');
 
-function tocaSom(idElementoAudio) {
+function tocaSom(seletorAudio) {
 
-    document.querySelector(idElementoAudio).play();
+    const elemento = document.querySelector(seletorAudio);
+
+    if (elemento === null) {
+        console.log('Elemento não encontrado');
+    }
+
+    if (elemento != null) {
+        elemento.play();
+    }
 }
 
 
@@ -22,12 +30,8 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
     }
 
     tecla.onkeydown = function (evento) {
-        if (evento.code === 'Space') {
+        if (evento.code === 'Space' || evento.code === 'Enter') {
             tecla.classList.add('ativa'); //.add - adiciona uma classe
-        }
-
-        if (evento.code === 'Enter') {
-            tecla.classList.add('ativa');
         }
     }
 
@@ -104,6 +108,7 @@ FUNÇAO ANONIMA - PESQUISAR
 
 == compara valores pra ver se são iguais
 === compara calores e o tipo de elemento para ver se são iguais
-
+|| ou
+!= Diferente
 --------------------------------------------------------------------------------------------------------------------------------------
 */
