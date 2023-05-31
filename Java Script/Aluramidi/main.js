@@ -3,9 +3,10 @@
 //document.querySelector('.tecla');
 /*O parâmetro é alguma coisa que conseguimos passar para nossa função e que a execução, que o código da nossa função depende para funcionar corretamente. E muitas vezes esse parâmetro pode ser opcional, no nosso caso não é, realmente precisamos desse parâmetro, ou seja, desta informação, para nossa função tocar o som corretamente. Então para eu declarar um parâmetro de uma função basta que na assinatura dessa função, que é a declaração function, o nome desta função e o parâmetro dentro dos parênteses vamos criar o parâmetro.*/
 
-/*Explicação sobre esse parametreo idElementoAudio
+/*Explicação sobre esse parametro idElementoAudio
 https://cursos.alura.com.br/forum/topico-duvida-parametro-255135
 https://cursos.alura.com.br/forum/topico-aula-274036
+https://cursos.alura.com.br/forum/topico-duvida-sobre-idelementoaudio-nao-entendi-a-funcionalidade-dele-200183
 */
 
 function tocaSom(idElementoAudio){

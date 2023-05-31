@@ -1,0 +1,62 @@
+https://cursos.alura.com.br/forum/topico-nao-entendi-o-template-string-274744
+https://cursos.alura.com.br/forum/topico-duvida-porque-usar-as-crases-e-o-273515
+
+
+O template string é uma maneira mais otimizada de concatenar ou unir dados para formar uma expressão, com ele é possível misturar diferentes tipos (variáveis, textos, operadores etc) de forma mais eficiente e no final irá converter a expressão em uma string única.
+
+Sem o template string, o código ficaria:
+
+  const idAudio = "#som_" + instrumento
+
+
+  Parece que não faz diferença, mas a maneira acima é mais antiga e tem os seus problemas, veja no trecho de exemplo abaixo, em que estamos consologando a frase:
+
+"Quinze é 15 e
+
+não 20"
+
+-------------------SEM TEMPLATE STRING-----------------------------------------------
+
+const a = 5;
+const b = 10;
+console.log("Fifteen is " + (a + b) + " and\nnot " + (2 * a + b) + ".");
+
+// "Quinze é 15 e
+// não 20."
+
+
+----------------------COM TEMPLATE STRING-------------------------------------------------------------------------------
+
+const a = 5;
+const b = 10;
+console.log(`Fifteen is ${a + b} and
+not ${2 * a + b}.`);
+
+// "Quinze é 15 e
+// não 20."
+
+Repare que com o template string, a sintaxe fica menos verbosa, evita possíveis erros de digitação e torna o código até mais legível e por isso é a maneira mais recomendada de ser utilizada.
+
+No caso do código da aula está sendo concatenada a expressão #som_${instrumento} em que está pegando o valor contido na variável instrumento e somando ao texto "som_" para formar texto que compreende o id, por exemplo: "som_tecla_pom".
+
+Sendo assim, para utilizar o template string, utiliza-se crase para englobar toda a frase e ${} passando dentro a variável.
+
+Espero ter ajudado, em caso de dúvidas fique a vontade para perguntar. Abraços e bons estudos!
+
+------------------------------- OUTRA EXPLICAÇÃO----------------------------------------------------------------------
+
+Nesse caso, a template string nada mais é que uma string única que nos permite concatenar dentro dela expressões javascript.
+
+Exemplo:
+
+const nome = 'Bernardo',
+    sobrenome = 'Schmitz';
+
+// Invés de usarmos desse jeito:
+console.log('Meu nome é ' + nome + ' ' + sobrenome)
+
+// Podemos usar desse:
+console.log(`Meu nome é ${nome} ${sobrenome}`) 
+
+
+E teremos o mesmo resultado.
