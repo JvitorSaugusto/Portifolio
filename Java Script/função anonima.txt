@@ -22,3 +22,19 @@ No vídeo anterior vimos como fazer uma função mais genérica que possa execut
 [03:09] E não preciso colocar um nome nela, abre e fecha parênteses e depois abre fecha as chaves e dentro das chaves eu vou conseguir chamar a minha função tocaSom() com parênteses, porque na nossa atribuição, a função anônima no onclick, vamos declarar ou criar uma função nova, portanto, quando criamos uma função não a invocamos imediatamente, só criamos e declaramos que ela existe naquele contexto, naquele momento.
 
 [03:47] Para chamá-la eu vou ter que fazer o clique no botão, naquele determinado botão. Portanto agora dentro da minha função anônima, eu vou poder chamar a função tocaSom e aí colocar os parênteses e passar um dado ID. Então vou colocar os parênteses e aspas simples tocaSom(‘#som_tecla_pom’), por exemplo.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+A diferença da função anônima para a declarada é que a declara pode ser chamada mais vezes por ter um nome. Uma função anônima só pode ser executada uma única vez, quando um gatilho for disparado, nesse caso, quando o evento do click for disparado.
+
+As novas versões do JavaScript a partir do ES6 ainda tem uma forma diferente de declaramos uma função anônima. No lugar de usarmos function(), nós abrimos parênteses e colocamos uma seta formada por um sinal de igual e um maior =>.
+
+---------------------------------------------
+robotron.addEventLeitener("click", () => {
+    console.log('Cliquei nno robô.')
+})
+---------------------------------------------
+
+Com isso, economizamos na escrita de uma função, mas continuamos identificando-a claramente como um função anônima. Essa é uma arrow function (em tradução livre: função de setas) para declarar a função que não será nomeada novamente.
+
+Se recarregarmos a página, ele novamente executa dizOi e se clicamos no robô ele está interagindo com nossa página.

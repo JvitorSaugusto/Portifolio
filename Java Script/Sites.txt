@@ -1,0 +1,33 @@
+VAR-LET-CONST
+
+https://www.alura.com.br/artigos/entenda-diferenca-entre-var-let-e-const-no-javascript
+
+https://hcode.com.br/blog/entenda-a-diferenca-entre-var-let-e-const-no-javascript
+
+https://cursos.alura.com.br/forum/topico-qual-a-diferenca-de-var-e-let-209725
+
+SINTAXE
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Grammar_and_types
+
+-------------------------------------------------------------------------------------------------------------------------------
+Capturando valor do input: introdução a seletores
+
+https://www.alura.com.br/artigos/capturando-valor-do-input-introducao-a-seletores
+
+-------------------------------------------------------------------------------------------------------------------------------
+HOISTING
+
+https://www.alura.com.br/artigos/hoisting-no-javascript
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+ARROW FUNCTION
+
+https://www.alura.com.br/artigos/conhecendo-arrow-functions#:~:text=N%C3%B3s%2C%20da%20Alura%2C%20somos%20uma,programa%20Growth%20Academy%20em%202021.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+https://www.w3schools.com/js/js_arrow_function.asp
+-------------------------------------------------------------------------------------------------------------------------------
+
