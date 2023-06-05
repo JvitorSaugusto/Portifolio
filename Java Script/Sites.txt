@@ -30,4 +30,14 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arro
 
 https://www.w3schools.com/js/js_arrow_function.asp
 -------------------------------------------------------------------------------------------------------------------------------
+ELEMENT.ADDEVENTLISTENER()
 
+https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener
+
+https://www.w3schools.com/jsref/met_element_addeventlistener.asp
+-------------------------------------------------------------------------------------------------------------------------------
+FOREACH
+
+O forEach() é muito simples de ser utilizado, toda vez ele é usado temos um elemento e um índice. O elemento é aquilo que foi clicado e o índice é o indíce do array. Então controle.forEach() faz algo.
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
