@@ -41,3 +41,8 @@ FOREACH
 O forEach() é muito simples de ser utilizado, toda vez ele é usado temos um elemento e um índice. O elemento é aquilo que foi clicado e o índice é o indíce do array. Então controle.forEach() faz algo.
 
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+-------------------------------------------------------------------------------------------------------------------------------
+PRA QUE SERVE UM ARRAY
+
+https://www.alura.com.br/artigos/javascript-para-que-serve-array
+-------------------------------------------------------------------------------------------------------------------------------
