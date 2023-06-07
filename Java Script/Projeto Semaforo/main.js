@@ -26,7 +26,7 @@ const changeColor = () => {
     nextIndex();
 }
 
-const stopAutomatic () => {
+const stopAutomatic = () => {
     clearInterval (intervalId);
 }
 
