@@ -1,5 +1,4 @@
-const turnOn = document.getElementById ('turnOn');
-const turnOff = document.getElementById ('turnOff');
+const turnOnOff = document.getElementById ('turnOnOff');
 const lamp = document.getElementById ('lamp');
 
 function isLampBroken () {
@@ -20,8 +19,18 @@ function lampBroken () {
     lamp.src = './img/quebrada.jpg';
 }
 
-turnOn.addEventListener ('click', lampOn);
-turnOff.addEventListener ('click', lampOff);
+// Função LampOnOff -  Se (if) o texto do botão for igual a "Ligar" a função LampOn será executada e o texto ira mudar para 'desligar'. se não estiver escrito 'Ligar' no botão, ao clicar LampOff será executado e o texto irá mudar para ligar.
+function lampOnOff () {
+    if (turnOnOff.textContent === 'Ligar') {
+        lampOn();
+        turnOnOff.textContent = 'Desligar';
+    } else {
+        lampOff();
+        turnOnOff.textContent = 'Ligar';
+    }
+}
+
+turnOnOff.addEventListener ('click', lampOnOff);
 lamp.addEventListener ('mouseover', lampOn);
 lamp.addEventListener ('mouseleave', lampOff);
 lamp.addEventListener ('dblclick', lampBroken);

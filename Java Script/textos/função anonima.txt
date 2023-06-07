@@ -38,3 +38,8 @@ robotron.addEventLeitener("click", () => {
 Com isso, economizamos na escrita de uma função, mas continuamos identificando-a claramente como um função anônima. Essa é uma arrow function (em tradução livre: função de setas) para declarar a função que não será nomeada novamente.
 
 Se recarregarmos a página, ele novamente executa dizOi e se clicamos no robô ele está interagindo com nossa página.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+ARROW function
+
+https://www.youtube.com/watch?v=S5Mn0qQzJ-0
