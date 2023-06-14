@@ -1,13 +1,13 @@
 :root {
 	--pattern-border-radius: 10px;
-  }
+}
 
 * {
 	margin: 0;
 	padding: 0;
 }
 
-.container-slide{
+.container-slide {
 	display: flex;
 	justify-content: space-between;
 	width: 50vw;
@@ -19,7 +19,7 @@
 	border: 5px solid black;
 }
 
-.container-items{
+.container-items {
 	position: absolute;
 	display: flex;
 	width: 50vw;
@@ -28,23 +28,23 @@
 	overflow: hidden;
 }
 
-.item{
+.item {
 	width: 50vw;
 	height: 50vh;
 	transition: all 1s;
 }
 
-.item:first-child{
+.item:first-child {
 	margin-left: -100%;
 }
 
-.item img{
+.item img {
 	width: 50vw;
 	height: 50vh;
 	border-radius: var(--pattern-border-radius);
 }
 
-.action-button{
+.action-button {
 	font: bold 30px sans-serif;
 	display: flex;
 	justify-content: center;
@@ -55,51 +55,34 @@
 	z-index: 1;
 }
 
-.action-button:hover{
+.action-button:hover {
 	color: white;
 	background-color: #00000088;
 	cursor: pointer;
 	transition: all 1s;
 }
 
-#previous{
+#previous {
 	border-radius: var(--pattern-border-radius) 0px 0px var(--pattern-border-radius);
 }
 
-#next{
+#next {
 	border-radius: 0px var(--pattern-border-radius) var(--pattern-border-radius) 0px;
 }
 
-.indicators {
-    position: absolute;
-    color: white;
-    left: 50%;
-    top:75%;
-    transform: translate(-50%);
-    display: flex;
-    gap: 5px;
+.container-especifico {
+	display: flex;
+	position: absolute;
+	left: 40%;
+	top: 80%;
+	gap: 30px;
 }
 
-.indicators span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    background-color: black;
-    border-radius: 50%;
-    user-select: none;
-    cursor: pointer;
+.especifico {
+	border-radius: 50%;
+	width: 25px;
 }
 
-.indicators span:hover {
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 3px black;
-}
+.especifico:hover {
 
-.indicators .selected {
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 3px black;
 }
