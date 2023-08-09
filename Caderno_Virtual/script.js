@@ -25,10 +25,11 @@ contexto.lineTo(linha.pos.x, linha.pos.y) /*Até onde sua linha vai */
 contexto.stroke(); /*Aparecer o desenho */
 }
 
-tela.onmousedown = (evento)=>{pincel.ativo = true}; //pincel ativa ao clicar e segurar
-tela.onmouseup = (evento)=>{pincel.ativo = false}; //desativa ao soltar o mouse
+tela.onmousedown = (evento)=>{console.log('Mouse pressionado'); pincel.ativo = true}; //pincel ativa ao clicar e segurar
+tela.onmouseup = (evento)=>{console.log('Mouse solto');  pincel.ativo = false}; //desativa ao soltar o mouse
 
 tela.onmousemove = (evento) => {
+    console.log('Mouse movido');
     pincel.pos.x = evento.clientX
     pincel.pos.y = evento.clientY
     pincel.movendo = true;
@@ -37,7 +38,7 @@ tela.onmousemove = (evento) => {
 //tela esta na frente do comando pois só queremos q esses eventos  ocorram nela e em mais nada. Evento client.x mapeia a posição em x, assim atualizando o pincel.
 
 const ciclo = () =>{
-    if(pincel.ativo && pincel.movendo && pincel.posAnterior) {
+    if (pincel.ativo && pincel.movendo && pincel.posAnterior) {
         desenharLinha({pos:pincel.pos, posAnterior: pincel.posAnterior})
         pincel.movendo = false;
     }
@@ -48,6 +49,6 @@ const ciclo = () =>{
 } 
 //verificando se o pincel esta ativo, se movendo e a posição anterior do mesmo, depois chamando o desenharLinha e passar um obj com pos e posAnterior usando os pinceis, e sempre q parar de mover o pincel, o pincel.movendo vai para false. Toda vez após esse ciclo meu pincel.posAnterior vai receber x e y da posição dos pinceis
 
-ciclo ();
+ciclo ()
 //desenharLinha({pos: {x:350, y:250},posAnterior: {x:10, y:10}})
 })
