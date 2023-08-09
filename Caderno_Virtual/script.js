@@ -44,7 +44,7 @@ const ciclo = () =>{
     }
     pincel.posAnterior = {x: pincel.pos.x, y: pincel.pos.y}
 
-    setTimeout(ciclo, 100);
+    setTimeout(ciclo, 10);
 
 } 
 //verificando se o pincel esta ativo, se movendo e a posição anterior do mesmo, depois chamando o desenharLinha e passar um obj com pos e posAnterior usando os pinceis, e sempre q parar de mover o pincel, o pincel.movendo vai para false. Toda vez após esse ciclo meu pincel.posAnterior vai receber x e y da posição dos pinceis
