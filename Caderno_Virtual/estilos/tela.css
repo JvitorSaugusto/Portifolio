@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -5,4 +10,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+}
+
+#tela {
+    position: relative;
+    right: -24px;
+    width: 364px;
+    height: 700px;
+    border: 1px solid;
 }
