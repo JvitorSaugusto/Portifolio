@@ -168,3 +168,45 @@ if(userName === "José") {
 FOR e WHILE
 
 As suas sintaxes são diferentes, mas as duas chegam no mesmo resultado*/
+
+//WHILE
+
+let p = 0
+
+while(p < 5) {
+    console.log(`Repetindo ${p}`)
+    p = p + 1; //incrementador, faz com que a condição p < 5 seja atingida
+}
+
+/* loop infinito
+
+let x = 10
+
+while(x > 5) {
+    console.log(`Imprimindo ${x}`)
+} */
+
+
+//DO WHILE também é uma estrutura de repetição, mas não é tão utilizado
+
+let o = 10
+
+do {
+    console.log(`Valor de o: ${o}`)
+    o--
+} while (o > 1);
+
+// FOR é a estrutura de repetição mais utilizada
+// ela condensa toda lógica em uma linha, variavel > condição > incrementador > condição final > progressão;
+
+for (let t = 0; t < 10; t++) {
+    console.log("Repetindo algo...")
+}
+
+//A variavel tbm pode ser declarada fora do FOR
+
+let r = 10
+
+for(r; r > 0; r = r - 1) {
+    console.log(`O r está diminuindo: ${r}`)
+}
