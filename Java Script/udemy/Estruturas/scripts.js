@@ -210,3 +210,50 @@ let r = 10
 for(r; r > 0; r = r - 1) {
     console.log(`O r está diminuindo: ${r}`)
 }
+
+// Forçando a saida de um Loop
+
+// Break
+
+for(let g = 20; g > 10; g--) {
+    console.log(`Ò valor de g é: ${g}`);
+
+    if(g === 12) {
+        console.log("O g é 12!");
+        break;
+    }
+}
+
+// Pulando uma execução do loop
+
+// Continue
+
+for(let s = 0; s < 10; s = s + 1) {
+    // operador resto = %    conta de divisão
+
+    if(s % 2 === 0) {  // Aqui, verifica se o valor atual de s é divisível por 2 (se é um número par). O operador % calcula o resto da divisão, e s % 2 resultará em zero para números pares. Se for verdade (ou seja, s é par)
+        console.log("Número par!");
+        continue;
+    }
+
+    console.log(s);
+}
+
+// SWITCH
+// O switch pode ser utilizado para organização de um excesso de if/else; Cada if seria um case; Para cada case, temos que adicionar um break; E temos o default, que é como o else;
+
+const job = "Advogado"
+
+switch(job) {
+    case "Programador":
+        console.log("Você é um programador!");
+        break;
+    case "Advogado":
+        console.log("Você é um advogado!");
+        break;
+    case "Engenheiro":
+        console.log("Você é um engenheiro!");
+        break;
+    default:
+        console.log("Profissão não encontrada");
+}
