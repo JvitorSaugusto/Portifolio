@@ -10,7 +10,8 @@ echo  __________________________
 echo     ESCOLHA UM APLICATIVO     
 echo  1. CHROME           
 echo  2. LIGHT SHOT
-echo  3. SAIR               
+echo  3. DISCORD   
+echo  4. SAIR            
 echo __________________________ 
                
 set /p opcao= Escolha uma opcao:
@@ -18,7 +19,8 @@ echo _______________________
 if "%opcao%" equ "1" goto opcao1
 if "%opcao%" equ "2" goto opcao2
 if "%opcao%" equ "3" goto opcao3
-if %opcao% GEQ 4 goto opcao4
+if "%opcao%" equ "4" goto opcao4
+if %opcao% GEQ 5 goto opcao5
 
 
 :opcao1
@@ -49,11 +51,24 @@ if exist "C:\Users\%username%\Downloads\setup-lightshot.exe" (
     goto menu
 )
 
-
 :opcao3
-exit
+cls
+if exist "C:\Users\%username%\Downloads\DiscordSetup.exe" (
+    start "" "C:\Users\%username%\Downloads\DiscordSetup.exe"
+    pause
+    goto menu
+) else (
+    bitsadmin /transfer AcessoRemoto /priority normal https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9018/DiscordSetup.exe "C:\Users\%username%\Downloads\DiscordSetup.exe"
+    pause
+    start "" "C:\Users\%username%\Downloads\DiscordSetup.exe"
+    pause
+    goto menu
+)
 
 :opcao4
+exit
+
+:opcao5
 cls
 echo -----------------------------------
 echo Opcao invalida! Escolha outra opcao
