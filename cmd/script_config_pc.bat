@@ -11,7 +11,8 @@ echo     ESCOLHA UM APLICATIVO
 echo  1. CHROME           
 echo  2. LIGHT SHOT
 echo  3. DISCORD   
-echo  4. SAIR            
+echo  4. LOGITECH      
+echo  5. SAIR      
 echo __________________________ 
                
 set /p opcao= Escolha uma opcao:
@@ -20,7 +21,8 @@ if "%opcao%" equ "1" goto opcao1
 if "%opcao%" equ "2" goto opcao2
 if "%opcao%" equ "3" goto opcao3
 if "%opcao%" equ "4" goto opcao4
-if %opcao% GEQ 5 goto opcao5
+if "%opcao%" equ "5" goto opcao4
+if %opcao% GEQ 6 goto opcao6
 
 
 :opcao1
@@ -66,9 +68,23 @@ if exist "C:\Users\%username%\Downloads\DiscordSetup.exe" (
 )
 
 :opcao4
-exit
+cls
+if exist "C:\Users\%username%\Downloads\options_installer.exe" (
+    start "" "C:\Users\%username%\Downloads\options_installer.exe"
+    pause
+    goto menu
+) else (
+    bitsadmin /transfer AcessoRemoto /priority normal https://download01.logi.com/web/ftp/pub/techsupport/options/options_installer.exe "C:\Users\%username%\Downloads\options_installer.exe"
+    pause
+    start "" "C:\Users\%username%\Downloads\options_installer.exe"
+    pause
+    goto menu
+)
 
 :opcao5
+exit
+
+:opcao6
 cls
 echo -----------------------------------
 echo Opcao invalida! Escolha outra opcao
