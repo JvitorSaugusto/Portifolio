@@ -257,3 +257,4 @@ switch(job) {
     default:
         console.log("Profissão não encontrada");
 }
+
