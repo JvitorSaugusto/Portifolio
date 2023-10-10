@@ -85,7 +85,16 @@ escopoAninhado();
 
 console.log(m)
 
-//ARROW FUNCTION - ela é uma função anonima netão precisa estar dentro de uma variavel
+//ARROW FUNCTION - ela é uma função anonima então precisa estar dentro de uma variavel
+/*Aqui está o que cada parte significa:
+
+const nomeDaFuncao: Você declara uma variável (usando const, let ou var) para armazenar a função. Isso permite que você chame a função pelo nome que você escolher, como uma função normal.
+
+(parâmetros): Dentro dos parênteses, você lista os parâmetros da função, separados por vírgulas. Esses parâmetros são como variáveis que a função pode usar para realizar seu trabalho.
+
+=>: Esta seta é o que torna a função uma "arrow function". Ela vem após os parâmetros e indica que o código à direita da seta é o corpo da função.
+
+{}: Dentro das chaves, você coloca o código que a função deve executar. Este é o corpo da função, onde você escreve as instruções que a função deve seguir. */
 
 const testeArrow = () => {
     console.log("Esta é uma arrow function")
@@ -153,7 +162,7 @@ greeting();
 
 greeting("João");
 
-//ARGUMENTOS/PARAMETRO DEFAULT - Ele tem um valo base mas se for passado um novo ele é substituido
+//ARGUMENTOS/PARAMETRO DEFAULT - Ele tem um valor base mas se for passado um novo ele é substituido
 
 // Um argumento opcional é um parâmetro de função que não precisa ser fornecido quando a função é chamada. Em outras palavras, é um valor que a função pode aceitar, mas não é obrigatório.
 
@@ -200,3 +209,62 @@ const repeatText = (text, repeat = 2) => {
 repeatText("Testando");
 
 repeatText("Agora repete 5 vezes", 5);
+
+// CLOSURE
+/*Closure é um conjunto de funções, onde temos um reaproveitamento do escopo interno de uma função;
+Pois este escopo não pode ser acessado fora da função, ja que é um bloco;
+Então há funções internas que aproveitam o escopo, e são chamados de closure; */
+
+function someFunction() {
+    let txt = "Alguma coisa";
+
+    function display() {
+        console.log(txt);
+    }
+
+    display();
+}
+
+someFunction();
+
+/* CLOSURE +
+As closures também podem servir para salvar os resultados já executados;
+Criando uma espécie de incrementaão;
+Assim temos uma variavel que executa uma função e modifica seu valor;
+
+Um closure em JavaScript é como uma "lembrança" de um escopo de função, mesmo depois de a função ter terminado de ser executada. Isso significa que as variáveis dentro dessa função ainda podem ser acessadas e utilizadas fora dela. 
+
+Em termos simples, um closure permite que você acesse variáveis de uma função em outro lugar do seu código, mesmo que essas variáveis não estejam mais no escopo original da função. Isso é útil para manter informações privadas ou para criar funções que "lembram" o contexto em que foram criadas.
+*/
+
+/*EXEMPLO BURRO
+
+Imagine que a função someFunction() é como uma caixa que contém um papel escrito com a palavra "Alguma coisa". Dentro dessa caixa, há uma pessoa chamada display() que pode ver o papel e diz o que está escrito nele.
+
+Quando você chama someFunction(), abre a caixa e permite que a pessoa display() veja o papel e diga em voz alta o que está escrito. O resultado é que você ouvirá "Alguma coisa" impresso no console.
+
+A chave para entender isso é que a pessoa display() dentro da caixa tem acesso ao papel porque está dentro da mesma caixa. Essa é uma forma simples de pensar em closures em JavaScript. A função interna (display()) pode acessar variáveis definidas na função externa (someFunction()) porque elas compartilham o mesmo "espaço" ou escopo.*/
+
+const multiplicationClosure = (n) => {
+    return (m) => {
+        return n*m;
+    };
+};
+
+const c1 = multiplicationClosure(5);
+const c2 = multiplicationClosure(10);
+
+console.log(c1);
+console.log(c2);
+
+console.log(c1(5));
+console.log(c2(10));
+
+/*EXPLICAÇÃO MULTIPLICATIONCLOSURE
+
+No momento em que você chama multiplicationClosure(5), você está definindo o valor de n na função externa como 5. A função externa retorna a função interna (m) => { return n * m; }.
+
+Quando você posteriormente chama c1(5), você está atribuindo o valor 5 ao parâmetro m na função interna. Nesse ponto, n já foi definido como 5 no contexto da função externa (ou seja, n é 5), e m se torna 5 devido ao argumento que você passou.
+
+Então, dentro da função interna, a expressão n * m usa n (que é 5) e m (que é 5) para calcular o resultado. Isso resulta em 5 * 5, igual a 25. Portanto, a função interna c1 retorna 25 quando chamada com o argumento 5.*/
+
