@@ -210,8 +210,8 @@ repeatText("Testando");
 
 repeatText("Agora repete 5 vezes", 5);
 
-// CLOSURE
-/*Closure é um conjunto de funções, onde temos um reaproveitamento do escopo interno de uma função;
+/*CLOSURE
+Closure é um conjunto de funções, onde temos um reaproveitamento do escopo interno de uma função;
 Pois este escopo não pode ser acessado fora da função, ja que é um bloco;
 Então há funções internas que aproveitam o escopo, e são chamados de closure; */
 
@@ -268,3 +268,79 @@ Quando você posteriormente chama c1(5), você está atribuindo o valor 5 ao par
 
 Então, dentro da função interna, a expressão n * m usa n (que é 5) e m (que é 5) para calcular o resultado. Isso resulta em 5 * 5, igual a 25. Portanto, a função interna c1 retorna 25 quando chamada com o argumento 5.*/
 
+/*RECURSÃO
+
+Um recurso que permite a função se autoinvocar continuamente;
+Criamos uma especie de loop;
+É interessante definir uma condição final, para parar a execução;*/
+
+const untilTen = (n,m) => {
+    if(n < 10) {
+        console.log("A função parou de executar!")
+    } else {
+        const x = n - m
+
+        console.log(x)
+
+        untilTen(x, m)
+    }
+}
+
+untilTen(100, 7)
+
+/*EXPLICAÇÃO DO CÓDIGO
+
+Este código JavaScript é uma função chamada untilTen que recebe dois argumentos, n e m. A função tem a finalidade de subtrair m de n repetidamente até que n seja menor que 10. Vou explicar o que acontece passo a passo:
+
+const untilTen = (n, m) => { ... }: Aqui, definimos uma função chamada untilTen que aceita dois parâmetros, n e m.
+
+if (n < 10) { ... }: Verifica se o valor de n é menor que 10.
+
+Se n for menor que 10, a função exibe a mensagem "A função parou de executar!" usando console.log.
+
+Caso contrário, a função continuará a executar o seguinte:
+
+const x = n - m: Calcula a diferença entre n e m e armazena o resultado em uma variável x.
+
+console.log(x): Exibe o valor de x no console.
+
+untilTen(x, m): Chama recursivamente a função untilTen com os novos valores de x e m. Isso significa que a função será chamada repetidamente com o novo valor de x até que x seja menor que 10.
+
+No exemplo final, a função untilTen é chamada com n igual a 100 e m igual a 7. A sequência de execução é a seguinte:
+
+x = 100 - 7 resultando em x = 93, e "93" é exibido no console.
+A função untilTen é chamada novamente com x = 93, e o processo se repete.
+x = 93 - 7 resultando em x = 86, e "86" é exibido no console.
+O processo continua até que x seja menor que 10.
+A função continuará a chamar a si mesma, subtraindo m de n, até que n seja menor que 10, momento em que a mensagem "A função parou de executar!" será exibida no console.
+
+A parte em que x chama recursivamente a função untilTen é essencialmente uma maneira de continuar executando a função repetidamente com um novo valor. Isso é chamado de recursão.
+
+Quando x chama untilTen(x, m), a função é chamada novamente com os novos valores de x e m. Isso significa que a função vai repetir o mesmo processo com o novo valor de x.
+
+É como se você estivesse resolvendo um problema em etapas, onde a solução de uma etapa leva à próxima etapa, e assim por diante, até que a condição (neste caso, n menor que 10) seja atendida.
+
+Então, a ideia é que a função untilTen continue chamando a si mesma com valores atualizados até que a condição n < 10 seja verdadeira. Isso permite que a função execute a subtração repetidamente até que n seja menor que 10.*/
+
+/*INFINITE RECURSION
+
+function run() {
+    console.log("Executando...");
+    run();
+}
+
+run()*/
+
+function factorial(x) {
+    if(x === 0) {
+        return 1
+    } else {
+        return x * factorial(x - 1)
+    }
+}
+
+const num = 6
+
+const result = factorial(num);
+
+console.log(`O fatorial do número ${num} é ${result}`);
