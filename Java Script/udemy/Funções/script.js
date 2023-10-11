@@ -331,6 +331,7 @@ function run() {
 
 run()*/
 
+
 function factorial(x) {
     if(x === 0) {
         return 1
@@ -344,3 +345,31 @@ const num = 6
 const result = factorial(num);
 
 console.log(`O fatorial do número ${num} é ${result}`);
+
+/*Este código JavaScript calcula o fatorial de um número usando uma função recursiva. Vou explicar passo a passo:
+
+function factorial(x) { ... }: Aqui, definimos uma função chamada factorial que aceita um argumento x. O objetivo da função é calcular o fatorial desse número.
+
+if (x === 0) { ... }: Verifica se x é igual a 0.
+
+Se x for igual a 0, a função retorna 1. Isso é uma base para a recursão, pois o fatorial de 0 é definido como 1.
+
+Caso contrário, se x não for igual a 0, a função chama a si mesma de forma recursiva, multiplicando x pelo fatorial de x - 1. Isso é feito com return x * factorial(x - 1).
+
+Fora da função, definimos uma constante num com o valor 6, que é o número para o qual queremos calcular o fatorial.
+
+Em seguida, chamamos a função factorial com num e armazenamos o resultado em result. Isso calculará o fatorial de 6.
+
+Finalmente, usamos console.log para exibir uma mensagem que mostra o resultado do fatorial de num.
+
+A função factorial funciona da seguinte maneira para calcular o fatorial de 6:
+
+factorial(6) chama factorial(5), multiplicando 6 por factorial(5).
+factorial(5) chama factorial(4), multiplicando 5 por factorial(4).
+Isso continua até factorial(1), que chama factorial(0). Nesse ponto, a recursão atinge a base e retorna 1.
+Em seguida, a multiplicação é desfeita, e factorial(1) retorna 1.
+factorial(2) multiplica 2 por 1 (o resultado de factorial(1)) e retorna 2.
+Isso continua até que factorial(6) multiplica 6 por 2 e retorna 720.
+Portanto, o fatorial de 6 é calculado como 6 * 5 * 4 * 3 * 2 * 1, que é igual a 720. A mensagem final no console exibe o resultado.
+ */
+
