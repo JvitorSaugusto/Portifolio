@@ -116,6 +116,8 @@ if exist "C:\Users\%username%\Downloads\winrar-x64-624br.exe" (
     goto menu
 )
 
+rem: COMENTARIO: é possível criar um script batch que abra qualquer arquivo .exe na mesma pasta do arquivo .bat sem especificar um nome de arquivo. Você pode fazer isso usando um loop e o comando for para percorrer todos os arquivos .exe no diretório atual e executá-los. Aqui ele percorre todos os arquivos .exe no mesmo diretório do arquivo .bat (representado por %~dp0) e os inicia um por um
+
 :opcao7
 cls
 echo -----------------------------------
@@ -126,6 +128,9 @@ for %%f in ("%~dp0\*.exe") do (
 )
 pause
 goto menu
+
+
+rem: COMENTARIO: é possível configurar o arquivo .bat para executar arquivos .exe no mesmo diretório do arquivo .bat. Para fazer isso, você pode usar a variável especial %~dp0, que representa o diretório do arquivo .bat atual. Você pode combinar essa variável com o nome dos arquivos .exe que deseja executar. Aqui está como você pode fazer isso no seu script:
 
 :opcao8
 cls
