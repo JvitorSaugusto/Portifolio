@@ -21,9 +21,9 @@ if "%opcao%" equ "3" goto opcao3
 if %opcao% GEQ 4 goto opcao4
 
 
-rem: COMENTARIO: O primeiro comando, net user NovoUsuario Senha123 /add, cria um novo usuário com o nome "NovoUsuario" e a senha "Senha123". Você pode substituir "NovoUsuario" e "Senha123" pelos valores que desejar.O segundo comando, net localgroup Administradores NovoUsuario /add, adiciona o novo usuário ao grupo de administradores para conceder privilégios de administrador. Se você não quiser que o usuário seja um administrador, você pode omitir este comando.
+:: COMENTARIO: O primeiro comando, net user NovoUsuario Senha123 /add, cria um novo usuário com o nome "NovoUsuario" e a senha "Senha123". Você pode substituir "NovoUsuario" e "Senha123" pelos valores que desejar.O segundo comando, net localgroup Administradores NovoUsuario /add, adiciona o novo usuário ao grupo de administradores para conceder privilégios de administrador. Se você não quiser que o usuário seja um administrador, você pode omitir este comando.
 
-rem COMENTARIO: o comando net user é usado para criar um usuário chamado "PerfectPay" e, em seguida, passwordreq:no é usado para indicar que a senha não é necessária. A segunda linha define a senha como vazia, permitindo que a conta seja criada sem uma senha.
+:: COMENTARIO: o comando net user é usado para criar um usuário chamado "PerfectPay" e, em seguida, passwordreq:no é usado para indicar que a senha não é necessária. A segunda linha define a senha como vazia, permitindo que a conta seja criada sem uma senha.
 
 :opcao1
 cls
