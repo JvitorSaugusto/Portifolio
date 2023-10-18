@@ -14,7 +14,7 @@ if exist %temp%\*.* (
 )
 
 
-:: Limpa a pasta temp do Windows
+:: Limpa a pasta prefetch do Windows
 if exist C:\Windows\Prefetch\*.* (
     del /q C:\Windows\Prefetch\*.*
 )
