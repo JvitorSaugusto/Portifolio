@@ -30,5 +30,10 @@ for /d %%x in (C:\Users\*) do (
 )
 
 
+:: Esvazia a Lixeira
+echo Esvaziando a Lixeira...
+rd /s /q C:\$Recycle.Bin
+
+
 echo Limpeza concluída. Pressione qualquer tecla para sair.
 pause
