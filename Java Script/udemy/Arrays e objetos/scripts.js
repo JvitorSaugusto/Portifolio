@@ -63,4 +63,64 @@ console.log(typeof text.toUpperCase);
 
 console.log(text.indexOf("g"));  // mostra a posição de um caractere em uma string
 
-/*OBJETOS */
+/*OBJETOS 
+
+Em JS um tipo de dado que é o objeto, mas seu nome tecnico é object literals;
+Isso pq o objeto vem da orientação a objetos, com outros recursos: instancia, herança...
+Já o literals possui apenas propriedades e métodos, nós mesmos os criamos;
+O objeto fica em um bloco de {}
+
+Basicamente eles armazenam informações como se fossem perfis de usuario e etc
+exemplos:
+
+const user1 = {
+    name: "João Vitor",
+    email: "joao@example.com",
+    password: "senha123",
+    age: 25,
+    address: "Rua ABC, 123",
+    // Outras informações do perfil do usuário
+};
+
+const user2 = {
+    name: "Maria Silva",
+    email: "maria@example.com",
+    password: "senha456",
+    age: 30,
+    address: "Avenida XYZ, 456",
+    // Outras informações do perfil do usuário
+};
+
+*/
+
+const person = {
+    name:"Joao Vitor",
+    age: 23,
+    job: "Programador",
+};
+
+console.log(person);
+
+console.log(person.name);
+
+/* OUTRO EXEMPLO DE OBJETO
+
+const city = {
+     name: "Itatiaia",
+     population: "22.345",
+     schools: "4",
+};
+
+O código que você forneceu define um objeto chamado city em JavaScript. Este objeto contém informações relacionadas a uma cidade, como o nome da cidade, a população e o número de escolas.
+
+Cada propriedade do objeto (name, population e schools) é uma chave que está associada a um valor correspondente. No seu caso, as chaves são strings que descrevem os tipos de informações armazenadas no objeto, e os valores associados são os dados específicos.
+
+Você pode acessar as informações contidas no objeto city usando a notação de ponto ou a notação de colchetes. Por exemplo:
+
+console.log(city.name); // Saída: "Itatiaia"
+console.log(city.population); // Saída: "22.345"
+console.log(city.schools); // Saída: "4"
+
+Assim, o objeto city é uma maneira eficaz de organizar e acessar informações sobre uma cidade em JavaScript.
+*/
+
