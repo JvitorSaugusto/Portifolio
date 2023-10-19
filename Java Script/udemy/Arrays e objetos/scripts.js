@@ -103,6 +103,11 @@ console.log(person);
 
 console.log(person.name);
 
+console.log(person.name.length);
+
+
+console.log(typeof person);
+
 /* OUTRO EXEMPLO DE OBJETO
 
 const city = {
@@ -122,5 +127,35 @@ console.log(city.population); // Saída: "22.345"
 console.log(city.schools); // Saída: "4"
 
 Assim, o objeto city é uma maneira eficaz de organizar e acessar informações sobre uma cidade em JavaScript.
+*/
+
+/*Removendo e criando propriedades
+
+Para adicionar uma nova propriedade a um objeto, utilizamos a notação de ponto e atribuimos um valor;
+Já para excluir, vamos utilizar o operador delete na propriedade alvo;*/
+
+const moto = {
+    engine: 250,
+    brand: "Yamaha",
+    model: "Fazer 250",
+    km: 25000,
+};
+
+console.log(moto);
+
+moto.combustive = "alcool/gasoline";
+
+console.log(moto);
+
+delete moto.km;
+
+console.log(moto)
+
+/**  Diferença entre arrays e objetos
+
+**Os arrays são utilizados como listas de itens, geralmente todos possuem o mesmo tipo;
+**Já os objetos são utilizados para descrever um item, contém as informaçoes do mesmo, e as propriedades possuem diferentes tipos de dados;
+Podemos ter também um array de objetos, isso é muito utilizado;
+Este dois dados são muito importantes na programação;
 */
 
